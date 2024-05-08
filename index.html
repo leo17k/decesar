@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Degradado de 4 Colores</title>
+<style>
+    body {
+        background: linear-gradient(to bottom, #ffcccc, #ffccff, #ccccff, #ccffff);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-size: 2em;
+        color: #333;
+        text-align: center;
+    }
+
+    .heart {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        position: relative;
+        transform: rotate(-45deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .heart:before,
+    .heart:after {
+        content: '';
+        width: 200px;
+        height: 320px;
+        background-color: pink;
+        border-radius: 100px 100px 0 0;
+        position: absolute;
+        top: -160px;
+    }
+
+    .heart:before {
+        left: 200px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+    }
+
+    .heart:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+    }
+
+    img {
+        max-width: 160px;
+        max-height: 160px;
+        z-index: 1;
+    }
+</style>
+</head>
+<body>
+    <h1>Te amo Shara</h1>
+    <h1></h1>
+
+  <div class="heart">
+    <img src="2.jpg" alt="Imagen de corazón" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+</div>
+
+</div>
+</body>
+</html>
